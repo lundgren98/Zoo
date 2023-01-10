@@ -1,4 +1,4 @@
-class Lemur extends Animal {
+class Lemur implements Animal {
 	private String name = "Lemur";
 	private int age = 0;
 	private int fluffiness = 4;
@@ -10,10 +10,7 @@ class Lemur extends Animal {
 	public String speak() { return "Hakkunah Matatatatatatata"; }
 	public void backflip() {}
 
-	@Override
 	public void eat() {}
-	@Override
 	public void sleep() {}
-	@Override
 	public void snuggle() {}
 }
