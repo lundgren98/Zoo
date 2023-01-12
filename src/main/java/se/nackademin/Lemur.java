@@ -4,6 +4,7 @@ class Lemur implements Animal {
 	private String name = "Lemur";
 	private int age = 0;
 	private int fluffiness = 4;
+	public int hunger;
 
 	public String getName() { return this.name; }
 	public int getAge() { return this.age; }
