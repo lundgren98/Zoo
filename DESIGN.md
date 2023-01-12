@@ -25,3 +25,42 @@
 8. Vårda djur
 9. Schemalägga personal
 10. Betala ut löner
+
+
+```mermaid
+classDiagram
+    Djur <|-- Lemurer
+    Lemurer -- Inhängnad
+    Personal -- Inhängnad
+    Personal -- Djur
+    class Djur {
+        +äta()
+        +sova()
+        +gosa()
+    }
+    class Lemurer {
+        -namn
+        -ålder
+        -fluffighet
+        +prata()
+        +backflip()
+    }
+    class Inhängnad {
+        -storlek
+        -smutsig
+        -temperatur
+        +städa()
+        +stänga()
+        +öppna()
+    }
+    class Personal {
+        +Namn
+        +Åldern
+        +Yrkestitel
+        +Lön
+        +Sälja()
+        +Mata djur()
+        +städa()
+        +ta betalt()
+    }
+```
