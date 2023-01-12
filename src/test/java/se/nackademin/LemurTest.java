@@ -11,24 +11,23 @@ import org.junit.Test;
 public class LemurTest {
     @Test
     public void shouldEat() {
-        Lemur Tomislav = new Lemur();
-        Tomislav.hunger = 8;
-        boolean isHungry = Tomislav.eat();
+        Lemur tomislav = new Lemur();
+        tomislav.hunger = 8;
+        boolean isHungry = tomislav.eat();
         assertTrue(isHungry);
 
     }
     @Test
     public void shouldSleep() {
-        Lemur Alexander = new Lemur();
-        Alexander.energyLevel = 2;
-        boolean isTired = Alexander.sleep();
+        Lemur alexander = new Lemur();
+        alexander.energyLevel = 2;
+        boolean isTired = alexander.sleep();
         assertTrue(isTired);
     }
     @Test
     public void shouldSnuggle() {
-        Lemur Timmy = new Lemur();
-        Timmy.snuggle();
-        //int fluffiness + 2;
-        //int energyLevel - 2;
+        Lemur timmy = new Lemur();
+        String response = timmy.snuggle();
+        assertEquals("Det har blivit fel", "Snuggling...", response);
     }
 }

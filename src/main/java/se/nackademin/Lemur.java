@@ -6,6 +6,8 @@ class Lemur implements Animal {
 	private int fluffiness = 4;
 	public int hunger = 5;
 	public boolean isHungry = false;
+	public int energyLevel = 10;
+	public boolean isTired = false;
 
 	public String getName() { return this.name; }
 	public int getAge() { return this.age; }
@@ -27,6 +29,24 @@ class Lemur implements Animal {
 		return !this.isHungry;
 	
 	}
-	public void sleep() {}
-	public void snuggle() {}
+	public boolean sleep() {
+		if (this.energyLevel < 5) {
+			this.isTired = true;
+		}
+		else {
+			this.isTired = false;
+		}
+		
+		return this.isTired;
+	}
+	
+	public String snuggle() {
+		if (this.energyLevel < 2) {
+			return "Lemur is too tired to snuggle";
+		}
+		this.energyLevel -= 2;
+		this.fluffiness += 2;
+		return "Snuggling...";
+	
+	}
 }
