@@ -1,7 +1,7 @@
 package se.nackademin;
 
 interface Animal {
-	public void eat();
+	public boolean eat();
 	public void sleep();
 	public void snuggle();
 }

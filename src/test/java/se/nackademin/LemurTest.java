@@ -26,7 +26,7 @@ public class LemurTest {
     public void shouldSnuggle() {
         Lemur Timmy = new Lemur();
         Timmy.snuggle();
-        int fluffiness + 2;
-        int energyLevel - 2;
+        //int fluffiness + 2;
+        //int energyLevel - 2;
     }
 }
