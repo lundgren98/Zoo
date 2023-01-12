@@ -1,3 +1,5 @@
+package se.nackademin;
+
 class Lemur implements Animal {
 	private String name = "Lemur";
 	private int age = 0;

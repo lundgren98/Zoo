@@ -1,3 +1,5 @@
+package se.nackademin;
+
 class Personell {
 	private String name;
 	private int age;
@@ -6,7 +8,7 @@ class Personell {
 	
 	public String getName() { return this.name; }
 	public int getAge() { return this.age; }
-	public String getTitle() { return this.tile; }
+	public String getTitle() { return this.title; }
 	public int getSalary() { return this.salary; }
 
 	public void sell() {}
