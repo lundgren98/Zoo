@@ -1,4 +1,4 @@
-## Medlemmar
+## Members
 
 Mira Lee @ https://github.com/miralee94
 Alexander Lundgren @ https://github.com/lundgren98
