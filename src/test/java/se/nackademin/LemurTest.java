@@ -29,5 +29,7 @@ public class LemurTest {
         Lemur timmy = new Lemur();
         String response = timmy.snuggle();
         assertEquals("Det har blivit fel", "Snuggling...", response);
+        assertEquals(8, timmy.energyLevel);
+        assertEquals(6, timmy.getFluffiness());
     }
 }
