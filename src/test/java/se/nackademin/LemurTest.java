@@ -1,10 +1,12 @@
-package src.test.java.se.nackademin;
+package se.nackademin;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertFalse;
 
 import java.beans.Transient;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 public class LemurTest {
     @Test
