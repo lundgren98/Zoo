@@ -8,7 +8,7 @@ class Lemur implements Animal {
 	public boolean isHungry = false;
 	public int energyLevel = 10;
 	public boolean isTired = false;
-	
+
 	//konstruktor?
 //	private String name;
 //	private int age;
@@ -38,9 +38,15 @@ class Lemur implements Animal {
 	public int getAge() { return this.age; }
 	public int getFluffiness() { return this.fluffiness; }
 
+	
 	public String speak() { return "Hakkunah Matatatatatatata"; }
 	
-	public void backflip() {}
+	public String backflip() {return "Lemur backflips"; }
+	
+	
+	public int bliÄldre() {return this.age+=1; }
+
+
 	
 	public boolean eat() {
 		if (this.hunger < 5) {

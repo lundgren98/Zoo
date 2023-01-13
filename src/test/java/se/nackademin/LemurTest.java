@@ -32,4 +32,23 @@ public class LemurTest {
         assertEquals(8, timmy.energyLevel);
         assertEquals(6, timmy.getFluffiness());
     }
+    @Test
+    public void shouldSpeak() {
+        Lemur mira = new Lemur();
+        String svar = mira.speak();
+        assertEquals("Hakkunah Matatatatatatata", svar);
+    }
+    @Test
+    public void shouldBackflip() {
+        Lemur lemur = new Lemur();
+        String response = lemur.backflip();
+        assertEquals("Lemur backflips", response);
+    }
+    @Test
+    public void shoudBliÄldre() {
+        Lemur lemur = new Lemur();
+        int ålder = lemur.bliÄldre();
+        assertEquals(1, ålder);
+    }
 }
+
