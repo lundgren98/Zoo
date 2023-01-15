@@ -28,15 +28,15 @@ public class LemurTest {
     public void shouldSnuggle() {
         Lemur timmy = new Lemur();
         String response = timmy.snuggle();
-        assertEquals("Det har blivit fel", "Snuggling...", response);
+        assertEquals("Something went wrong.", "Snuggling...", response);
         assertEquals(8, timmy.energyLevel);
         assertEquals(6, timmy.getFluffiness());
     }
     @Test
     public void shouldSpeak() {
         Lemur mira = new Lemur();
-        String svar = mira.speak();
-        assertEquals("Hakkunah Matatatatatatata", svar);
+        String response = mira.speak();
+        assertEquals("Hakkunah Matatatatatatata", response);
     }
     @Test
     public void shouldBackflip() {
@@ -45,10 +45,10 @@ public class LemurTest {
         assertEquals("Lemur backflips", response);
     }
     @Test
-    public void shoudBliÄldre() {
+    public void shouldGetOld() {
         Lemur lemur = new Lemur();
-        int ålder = lemur.bliÄldre();
-        assertEquals(1, ålder);
+        int age = lemur.getOld();
+        assertEquals(1, age);
     }
 }
 
