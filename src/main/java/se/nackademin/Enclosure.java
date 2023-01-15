@@ -2,7 +2,7 @@ package se.nackademin;
 
 class Enclosure {
 	private double size; // in sq ft
-	private boolean dirty;
+	public boolean dirty;
 	private double temperature;
 
 	public double getSize() { return this.size; }
