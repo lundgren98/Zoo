@@ -44,7 +44,7 @@ class Lemur implements Animal {
 	public String backflip() {return "Lemur backflips"; }
 	
 	
-	public int bliÄldre() {return this.age+=1; }
+	public int getOld() {return this.age+=1; }
 
 
 	
