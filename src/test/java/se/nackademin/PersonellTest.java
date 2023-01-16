@@ -19,7 +19,7 @@ public class PersonellTest
     {
 	    Personell per = new Personell();
 	    int oldSalary = per.getSalary();
-	    boolean accepted = per.sell();
+	    boolean accepted = per.sell(true);
 	    int newSalary = per.getSalary();
 	    assertEquals(newSalary, oldSalary + 1);
 	    assertTrue(accepted);
@@ -30,7 +30,7 @@ public class PersonellTest
     {
 	    Personell per = new Personell();
 	    int oldSalary = per.getSalary();
-	    boolean accepted = per.sell();
+	    boolean accepted = per.sell(false);
 	    int newSalary = per.getSalary();
 	    assertEquals(newSalary, oldSalary);
 	    assertFalse(accepted);
