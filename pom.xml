@@ -26,6 +26,13 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
+  <repositories>
+    <repository>
+      <id>jacoco-repo-id</id>
+      <url>https://repo.maven.apache.org/maven2</url>
+    </repository>
+  </repositories>  
 
   <build>
     <pluginManagement>      <!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
@@ -72,7 +79,7 @@
         <plugin>
           <groupId>org.jacoco</groupId>
           <artifactId>jacoco-maven-plugin</artifactId>
-          <version>0.8.9-SNAPSHOT</version>
+          <version>0.8.7</version>
           <executions>
             <execution>
               <id>default-prepare-agent</id>
