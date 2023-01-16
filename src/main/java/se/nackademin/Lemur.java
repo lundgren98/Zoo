@@ -25,15 +25,15 @@ class Lemur implements Animal {
 
 	
 	public boolean eat() {
-		if (this.hunger < 5) {
+		if (this.hunger > 5) {
 			this.isHungry = true;
-			this.eat();
+			this.hunger = 0;
 		}
 		else {
 			this.isHungry = false;
 		}
 		
-		return !this.isHungry;
+		return this.isHungry;
 	
 	}
 	public boolean sleep() {

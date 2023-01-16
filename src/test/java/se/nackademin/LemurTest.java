@@ -18,6 +18,14 @@ public class LemurTest {
 
     }
     @Test
+    public void shouldNotEat() {
+        Lemur tomislav = new Lemur();
+        tomislav.hunger = 3;
+        boolean isHungry = tomislav.eat();
+        assertFalse(isHungry);
+
+    }
+    @Test
     public void shouldSleep() {
         Lemur alexander = new Lemur();
         alexander.energyLevel = 2;
