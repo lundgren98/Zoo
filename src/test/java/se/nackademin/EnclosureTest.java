@@ -1,3 +1,5 @@
+package se.nackademin;
+
 import org.junit.Test;
 import static org.junit.Assert.*;
 
