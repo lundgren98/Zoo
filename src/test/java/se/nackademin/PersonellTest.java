@@ -49,7 +49,7 @@ public class PersonellTest
     {
 	    Personell per = new Personell();
 	    Enclosure lemurHouse = new Enclosure();
-	    lemurHouse.dirty = true;
+	    lemurHouse.setDirty(true);;
 	    boolean needsCleaning = per.clean(lemurHouse);
 	    assertTrue(needsCleaning);
     }
@@ -59,7 +59,7 @@ public class PersonellTest
     {
 	    Personell per = new Personell();
 	    Enclosure lemurHouse = new Enclosure();
-	    lemurHouse.dirty = false;
+	    lemurHouse.setDirty(false);
 	    boolean needsCleaning = per.clean(lemurHouse);
 	    assertFalse(needsCleaning);
     }
