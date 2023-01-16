@@ -50,5 +50,18 @@ public class LemurTest {
         int age = lemur.getOld();
         assertEquals(1, age);
     }
+    @Test
+    public void shouldGetDirty() {
+        Lemur lemur = new Lemur();
+        boolean isDirty = lemur.getDirty();
+        assertEquals(false, isDirty);
+    }
+
+    @Test
+    public void shouldBeatBox() {
+        Lemur lemur = new Lemur();
+        String beatboxing = lemur.beatBox();
+        assertEquals("Lemur is beatboxing", beatboxing);
+    }
 }
 

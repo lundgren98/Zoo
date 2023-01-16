@@ -8,31 +8,7 @@ class Lemur implements Animal {
 	public boolean isHungry = false;
 	public int energyLevel = 10;
 	public boolean isTired = false;
-
-	//konstruktor?
-//	private String name;
-//	private int age;
-//	private int fluffiness;
-//	public int hunger;
-//	public boolean isHungry;
-//	public int energyLevel;
-//	public boolean isTired;
-//
-//	public Lemur (String name,
-//	int age,
-//	int fluffiness,
-//	int hunger,
-//	boolean isHungry,
-//	int energyLevel,
-//	boolean isTired) {
-//		this.name = name;
-//		this.age = age;
-//		this.fluffiness = fluffiness;
-//		this.hunger = hunger;
-//		this.isHungry = isHungry;
-//		this.energyLevel = energyLevel;
-//		this.isTired = isTired;
-//	}
+	public boolean isDirty = false;
 
 	public String getName() { return this.name; }
 	public int getAge() { return this.age; }
@@ -80,4 +56,17 @@ class Lemur implements Animal {
 		return "Snuggling...";
 	
 	}
+	public boolean getDirty() {
+		return this.isDirty;
+
+	}
+
+	public String beatBox() {
+		return "Lemur is beatboxing";
+	}
+
+	public void setDirty(boolean dirty) {
+		this.isDirty = dirty;
+	}
 }
+
