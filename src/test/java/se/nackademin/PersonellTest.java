@@ -15,13 +15,25 @@ public class PersonellTest
      * Rigorous Test :-)
      */
     @Test
-    public void sellTicket()
+    public void sellTicketAccepted()
     {
 	    Personell per = new Personell();
 	    int oldSalary = per.getSalary();
-	    per.sell();
+	    boolean accepted = per.sell();
 	    int newSalary = per.getSalary();
 	    assertEquals(newSalary, oldSalary + 1);
+	    assertTrue(accepted);
+    }
+
+    @Test
+    public void sellTicketDeclined()
+    {
+	    Personell per = new Personell();
+	    int oldSalary = per.getSalary();
+	    boolean accepted = per.sell();
+	    int newSalary = per.getSalary();
+	    assertEquals(newSalary, oldSalary);
+	    assertFalse(accepted);
     }
 
     @Test
@@ -75,5 +87,25 @@ public class PersonellTest
 	    assertEquals(newBalance, oldBalance + salary);
     }
     
+    @Test
+    public void washDirtyAnimal()
+    {
+	    Personell per = new Personell();
+	    Lemur timon = new Lemur();
+	    timon.setDirty(true);
+	    boolean needsCleaning = per.washAnimal(timon);
+	    assertTrue(needsCleaning);
+	    assertFalse(timon.getDirty());
+    }
 
+    @Test
+    public void washCleanAnimal()
+    {
+	    Personell per = new Personell();
+	    Lemur timon = new Lemur();
+	    timon.setDirty(false);
+	    boolean needsCleaning = per.washAnimal(timon);
+	    assertFalse(needsCleaning);
+	    assertFalse(timon.getDirty());
+    }
 }
