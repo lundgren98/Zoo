@@ -54,7 +54,7 @@ public class LemurTest {
     public void shouldGetDirty() {
         Lemur lemur = new Lemur();
         boolean isDirty = lemur.getDirty();
-        assertEquals(true, isDirty);
+        assertEquals(false, isDirty);
     }
 
     @Test
