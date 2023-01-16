@@ -42,7 +42,7 @@ public class PersonellTest
 	    Personell per = new Personell();
 	    Lemur timon = new Lemur();
 	    timon.hunger = 10;
-	    boolean wantsToEat = per.feed_animal(timon);
+	    boolean wantsToEat = per.feedAnimal(timon);
 	    assertTrue(wantsToEat);
     }
 
@@ -52,7 +52,7 @@ public class PersonellTest
 	    Personell per = new Personell();
 	    Lemur timon = new Lemur();
 	    timon.hunger = 0;
-	    boolean wantsToEat = per.feed_animal(timon);
+	    boolean wantsToEat = per.feedAnimal(timon);
 	    assertFalse(wantsToEat);
     }
 

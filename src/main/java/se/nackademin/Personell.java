@@ -19,7 +19,7 @@ class Personell {
 		return isValid;
 	}
 
-	public boolean feed_animal(Lemur timon) {
+	public boolean feedAnimal(Lemur timon) {
 		boolean isHungry = timon.hunger > 0; 
 		if (isHungry) {
 			timon.eat();
