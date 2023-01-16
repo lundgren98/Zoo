@@ -34,9 +34,9 @@ classDiagram
     Personell "+1..*" -- "+0..*"  Enclosure
     Personell "+1..*" -- "+0..*" Animal
     class Animal {
-        +eat()
-        +sleep()
-        +snuggle()
+        +eat():boolean
+        +sleep():boolean
+        +snuggle():String
     }
     class Lemur {
         -name:String
