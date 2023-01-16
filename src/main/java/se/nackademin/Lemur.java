@@ -8,6 +8,7 @@ class Lemur implements Animal {
 	public boolean isHungry = false;
 	public int energyLevel = 10;
 	public boolean isTired = false;
+	public boolean isDirty = false;
 
 	//konstruktor?
 //	private String name;
@@ -80,4 +81,13 @@ class Lemur implements Animal {
 		return "Snuggling...";
 	
 	}
+	public boolean getDirty() {
+		return this.isDirty = true;
+
+	}
+
+	public String beatBox() {
+		return "Lemur is beatboxing";
+	}
 }
+
