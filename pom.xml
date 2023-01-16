@@ -27,13 +27,6 @@
     </dependency>
   </dependencies>
   
-  <repositories>
-    <repository>
-      <id>jacoco-repo-id</id>
-      <url>https://repo.maven.apache.org/maven2</url>
-    </repository>
-  </repositories>  
-
   <build>
     <pluginManagement>      <!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
