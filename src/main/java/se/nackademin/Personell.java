@@ -13,8 +13,10 @@ class Personell {
 	public int getSalary() { return this.salary; }
 	public int getBalance() { return this.balance; }
 
-	public void sell() {
-		this.salary += 1;
+	public boolean sell(boolean isValid) {
+		if (isValid)
+			this.salary += 1;
+		return isValid;
 	}
 
 	public boolean feed_animal(Lemur timon) {
@@ -35,5 +37,13 @@ class Personell {
 
 	public void acceptPayment() {
 		this.balance += this.salary;
+	}
+
+	public boolean washAnimal(Lemur timon) {
+		boolean isDirty = timon.getDirty();
+		if (isDirty) {
+			timon.setDirty(false);
+		}
+		return isDirty;
 	}
 }
