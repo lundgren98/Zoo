@@ -29,38 +29,47 @@
 
 ```mermaid
 classDiagram
-    Djur <|-- Lemurer
-    Lemurer -- Inhängnad
-    Personal -- Inhängnad
-    Personal -- Djur
-    class Djur {
-        +äta()
-        +sova()
-        +gosa()
+    Animal <|-- Lemur
+    Lemur "+0..*" -- "1" Enclosure
+    Personell "+1..*" -- "+0..*"  Enclosure
+    Personell "+1..*" -- "+0..*" Animal
+    class Animal {
+        +eat()
+        +sleep()
+        +snuggle()
     }
-    class Lemurer {
-        -namn
-        -ålder
-        -fluffighet
-        +prata()
-        +backflip()
+    class Lemur {
+        -name:String
+        -age:int
+        -fluffiness:int
+	    -hunger:int
+	    -isHungry:boolean
+	    -energyLevel:int
+	    -isTired:boolean
+	    -isDirty:boolean
+        +speak():String
+        +backflip():String
+	    +getOld():int
+	    +beatBox():String
     }
-    class Inhängnad {
-        -storlek
-        -smutsig
-        -temperatur
-        +städa()
-        +stänga()
-        +öppna()
+    class Enclosure {
+        -size:double
+        -dirty:boolean
+        -temperatue:double
+        +clean()
+        +open()
+        +close()
     }
-    class Personal {
-        +Namn
-        +Åldern
-        +Yrkestitel
-        +Lön
-        +Sälja()
-        +Mata djur()
-        +städa()
-        +ta betalt()
+    class Personell {
+        -name:String
+        -age:int
+        -title:String
+        -salary:int
+        -balance:int
+        +sell():boolean
+        +feedAnimal():boolean
+        +clean():boolean
+        +acceptPayment()
+        +washAnimal():boolean
     }
 ```
